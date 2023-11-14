@@ -1,0 +1,112 @@
+.email_data {
+  width: 34%;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1010;
+  top: 6%;
+  left: 32%;
+  height: 550px;
+  border-radius: 20px;
+  opacity: 1;
+}
+.email_top i {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  font-size: 2rem;
+  color: #ea002a;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+.email_top h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3%;
+  color: #ea002a;
+  font-family: sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  width: 90%;
+  margin-left: 5%;
+}
+form label {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #ea002a;
+}
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 3% 0%;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2%;
+  margin-bottom: 16px;
+}
+input::placeholder {
+  display: flex;
+  padding-left: 1%;
+  font-size: large;
+}
+
+.form_button button {
+  background-color: #ea002a;
+  color: #ffffff;
+  width: 100%;
+  padding: 3% 2%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+input[type='text']:hover,
+input[type='email']:hover,
+textarea :hover {
+  border-color: #ea002a;
+  background-color: #ccc;
+}
+
+input[type='submit']:hover {
+  background-color: #e0e0e0;
+}
+
+input[type='submit']:focus {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+@media only screen and (max-width: 1100px) {
+  .email_data {
+    width: 44%;
+    left: 28%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .email_data {
+    width: 56%;
+    left: 22%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .email_data {
+    width: 70%;
+    left: 15%;
+  }
+  form {
+    margin-top: 3%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .email_data {
+    width: 80%;
+    left: 10%;
+  }
+}

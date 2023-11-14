@@ -1,0 +1,140 @@
+.location_detail {
+  width: 40%;
+}
+.location_input {
+  width: 88%;
+  margin-top: 2%;
+}
+.location_input input {
+  width: 100%;
+  margin-left: 6%;
+  padding: 2.5% 0%;
+  background-color: silver;
+  border: 2px solid black;
+}
+
+.location_input ::placeholder {
+  color: black;
+}
+.center_location_div {
+  height: 57%;
+  width: 88%;
+  margin-left: 6%;
+  overflow-y: scroll;
+}
+
+.details_locations {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  height: 110px;
+}
+.details_locations h3 {
+  padding-top: 3%;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+.details_locations p {
+  padding-top: 3%;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.time {
+  padding-top: 3%;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: rgb(234, 0, 42);
+}
+.distance {
+  padding-top: 3%;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.locations_ine {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.locations_orderbutton {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding-bottom: 2%;
+  padding-right: 4%;
+}
+.locations_orderbutton button {
+  width: 40%;
+  padding: 3%;
+
+  background-color: #ea002a;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.location_end_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.location_endbutton {
+  width: 100%;
+
+  padding-top: 2%;
+}
+.location_endbutton button {
+  width: 40%;
+  padding: 2% 0%;
+  background-color: #ea002a;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1100px) {
+  .location_detail {
+    width: 55%;
+    left: 22.5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .location_detail {
+    width: 76%;
+    left: 12%;
+  }
+  .time {
+    font-size: 1rem;
+  }
+  .location_endbutton {
+    padding-top: 2%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .location_detail {
+    width: 90%;
+    left: 5%;
+  }
+  .locations_orderbutton {
+    width: 100%;
+  }
+  .locations_orderbutton button {
+    display: flex;
+    width: 37%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .distance {
+    font-size: 12px;
+  }
+  .location_endbutton {
+    padding-top: 7%;
+  }
+  .location_endbutton button {
+    width: 60%;
+  }
+}

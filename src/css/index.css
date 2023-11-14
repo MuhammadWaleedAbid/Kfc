@@ -1,5 +1,15 @@
 /* Importing all CSS files */
-@import url('./Header.css');
+@import url('./Common/Header.css');
+@import url('./Common/Menu.css');
+@import url('./Home/Carousal.css');
+@import url('./Common/Explore.css');
+@import url('./Common/Bestseller.css');
+@import url('./Common/Topdeals.css');
+@import url('./Home/Pickup.css');
+@import url('./Common/Footer.css');
+@import url('./Common/Delivery.css');
+@import url('./Common/Location.css');
+@import url('./Common/Email.css');
 
 /* Defaults */
 * {
@@ -7,8 +17,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-/* Primary Variables */
-:root {
-  --primary: 'green';
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e0e0e0;
 }

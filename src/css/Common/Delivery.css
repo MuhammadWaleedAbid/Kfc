@@ -1,0 +1,197 @@
+.order_delivery {
+  width: 34%;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1010;
+  top: 6%;
+  left: 32%;
+  height: 600px;
+  border-radius: 20px;
+  opacity: 1;
+}
+.top_div_order {
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+}
+.top_div_order_top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+.order_icon {
+  width: 3%;
+  height: 17px;
+  background-color: #ea002a;
+}
+.top_div_order i {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 1%;
+  padding-right: 5%;
+  font-size: 2rem;
+  color: #ea002a;
+}
+.top_div_order h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6%;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+.order1_line,
+.order2_line {
+  width: 100%;
+  height: 1px;
+  background-color: silver;
+}
+
+.center_div_order {
+  padding-top: 8%;
+  height: 70%;
+  overflow-y: scroll;
+}
+.orderdelivery_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  width: 95%;
+  height: 320px;
+  border: 2px groove silver;
+  text-align: center;
+  position: relative;
+  left: 2.5%;
+  border-radius: 10px;
+  gap: 0.2%;
+}
+.orderdelivery_box h3 {
+  position: absolute;
+  background-color: #ffffff;
+  top: -11px;
+  left: 24%;
+  font-size: 1rem;
+  font-family: sans-serif;
+  transform: translateX(-50%);
+}
+.orderdelivery_box input {
+  border-radius: 8px;
+}
+.search-input {
+  width: 94%;
+  padding: 4% 0%;
+  background-color: #343434;
+  border: none;
+  border-radius: 2px;
+}
+.search-input::placeholder {
+  font-size: 1.6rem;
+
+  color: #ffffff;
+
+  text-align: center;
+}
+.orderdelivery_box iframe {
+  width: 96%;
+  height: 240px;
+}
+.order_button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  text-align: center;
+  padding-left: 5%;
+}
+.order_button h2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  padding-top: 7%;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+.order_button button {
+  width: 100%;
+  padding: 3% 0%;
+}
+.confirm {
+  background-color: #ea002a;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  border-radius: 5px;
+  margin-top: 7%;
+}
+.start_order {
+  background-color: rgb(253, 176, 189);
+  border: none;
+  color: #343434;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  border-radius: 5px;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+.end_div_order {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 4%;
+}
+.user,
+.login {
+  margin-top: 5%;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 1100px) {
+  .order_delivery {
+    width: 50%;
+
+    top: 4%;
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .order_delivery {
+    width: 70%;
+    top: 4%;
+    left: 15%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .order_delivery {
+    width: 90%;
+    top: 4%;
+    left: 5%;
+  }
+  .orderdelivery_box h3 {
+    top: -9px;
+    left: 35%;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+  }
+  .search-input::placeholder {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  .top_div_order h3 {
+    font-size: 1rem;
+  }
+  .order_button h2 {
+    font-size: 1rem;
+  }
+}

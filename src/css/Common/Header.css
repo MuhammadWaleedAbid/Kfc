@@ -1,0 +1,243 @@
+.top_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5% 0%;
+}
+.center_header {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.left_side {
+  display: flex;
+  width: 50%;
+  gap: 4%;
+}
+.left_menu {
+  display: flex;
+  cursor: pointer;
+}
+.left_menu i {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.left_logo {
+  display: flex;
+  justify-content: center;
+}
+.left_logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.left_header_button {
+  display: flex;
+  width: 50%;
+  gap: 5%;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.header_button1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerbtn1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_button1 button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 6%;
+  background: #dfefff4d;
+  cursor: pointer;
+}
+.header_button1 button {
+  padding: 6% 0%;
+  border: 2px solid #ea002a;
+  border-radius: 6px;
+  font-size: large;
+}
+
+.header_button1 img {
+  width: 16%;
+}
+
+.right_side {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  gap: 2%;
+}
+
+.Img_dev {
+  width: 8%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.Img_dev img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right_header_button {
+  width: 20%;
+}
+.right_header_button button {
+  width: 70%;
+  padding: 10% 0%;
+  background: #ea002a;
+  border: none;
+  text-align: center;
+  border-radius: 10%;
+  color: #ffffff;
+  font-size: large;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+.hide_header_button {
+  display: none;
+  background-color: #e0e0e0;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.right_header_button button:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+@media only screen and (max-width: 1100px) {
+  .header_button1 {
+    width: 50%;
+  }
+
+  .header_button1 button {
+    font-size: 0.9rem;
+  }
+
+  .right_header_button button {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .left_header_button {
+    display: none;
+  }
+  .hide_header_button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    gap: 2%;
+  }
+  .hide_imgs {
+    display: none;
+  }
+  .left_logo img {
+    width: 100%;
+  }
+  .header_button1 {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_button1 img {
+    width: 17%;
+  }
+
+  .header_button1 button {
+    font-size: larger;
+  }
+
+  .right_side {
+    gap: 3%;
+  }
+  .Img_dev {
+    width: 9%;
+  }
+  .right_header_button button {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header_button1 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_button1 img {
+    width: 19%;
+  }
+
+  .header_button1 button {
+    font-size: 1rem;
+  }
+
+  .right_header_button {
+    width: 28%;
+  }
+  .right_header_button button {
+    font-size: 1.1rem;
+  }
+  .right_side {
+    gap: 2%;
+    display: flex;
+  }
+
+  .Img_dev {
+    width: 10%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .top_header {
+    width: 100%;
+  }
+  .center_header {
+    width: 90%;
+  }
+  .left_side {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .right_side {
+    display: none;
+  }
+  .header_button1 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header_button1 img {
+    width: 19%;
+  }
+
+  .header_button1 button {
+    font-size: 0.8rem;
+  }
+}

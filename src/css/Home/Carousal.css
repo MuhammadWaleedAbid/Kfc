@@ -1,0 +1,129 @@
+.image-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.image-carousel img {
+  width: 100%;
+  cursor: pointer;
+}
+.carousal_click_buttons {
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.click_one {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.click_one button {
+  width: 5%;
+  border-radius: 50%;
+  border-color: #ea002a;
+  background-color: #ea002a;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.click_two {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.click_two button {
+  width: 5%;
+  border-radius: 50%;
+  border-color: #ea002a;
+  background-color: #ea002a;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.left_side_button,
+.right_side_button {
+  font-size: 1.5rem;
+  color: white;
+}
+.click_one button:hover,
+.click_two button:hover {
+  opacity: 1;
+}
+
+.caro_down_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1%;
+}
+.caro_down_button button {
+  width: 40%;
+  padding: 0.5%;
+  background: #ea002a;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: large;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+@media only screen and (max-width: 1000px) {
+  .click_two button,
+  .click_one button {
+    width: 6%;
+  }
+
+  .left_side_button,
+  .right_side_button {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .caro_down_button button {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .click_two button,
+  .click_one button {
+    width: 8%;
+  }
+
+  .left_side_button,
+  .right_side_button {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .caro_down_button button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .click_two button,
+  .click_one button {
+    width: 15%;
+  }
+
+  .left_side_button,
+  .right_side_button {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .caro_down_button button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+  }
+}

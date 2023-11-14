@@ -1,0 +1,126 @@
+.side_bar_background {
+  width: 100%;
+  background-color: #00000098;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+}
+.sidebar_menu {
+  width: 30%;
+  background-color: #ffffff;
+  z-index: 1001;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  justify-content: flex-start;
+  scrollbar-color: red;
+  min-height: 100%;
+  max-height: 100vh;
+  /* opacity: 1; */
+}
+.side_bar_button {
+  width: 40%;
+  padding-top: 5%;
+  padding-left: 5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.side_bar_button button {
+  width: 70%;
+  padding: 10% 0%;
+  background: #ea002a;
+  border: none;
+  text-align: center;
+  border-radius: 10%;
+  color: #ffffff;
+  font-size: large;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+.mode_button {
+  display: flex;
+  width: 20%;
+  height: 200px;
+  border-radius: 6px;
+  border: 2px solid red;
+}
+.mode_button button {
+  border: none;
+  width: 100%;
+  padding: 3% 0%;
+  background-color: #ffffff;
+}
+.side_sub_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+.side_first_li {
+  width: 67%;
+}
+.side_first_li ul li a {
+  padding-left: 10%;
+}
+.side_first_li ul li i {
+  font-size: 1.5rem;
+}
+.side_first_line {
+  margin-top: 10%;
+}
+.side_first_line,
+.side_second_line {
+  width: 80%;
+  height: 1px;
+  background-color: #000000;
+}
+.side_second_li {
+  width: 67%;
+}
+.side_first_li ul li,
+.side_second_li ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 8% 0%;
+}
+.side_first_li ul li a,
+.side_second_li ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000000;
+}
+@media only screen and (max-width: 1100px) {
+  .sidebar_menu {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sidebar_menu {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sidebar_menu {
+    width: 80%;
+  }
+  .side_first_li ul li i {
+    font-size: 1.2rem;
+  }
+  .side_first_li ul li a,
+  .side_second_li ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000000;
+  }
+}
